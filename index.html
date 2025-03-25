@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Responsive Layout Example</title>
+  <style>
+    /* Basic styling for columns */
+    .column {
+      float: left;
+      width: 48%;
+      background-color: #e0e0e0;
+      padding: 20px;
+      margin: 1%;
+      box-sizing: border-box;
+    }
+    
+    /* Clearfix for the row container */
+    .row::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    /* Responsive adjustments */
+    @media (max-width: 600px) {
+      .column {
+        width: 100%;
+        float: none;
+        margin: 0 0 20px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="row">
+    <div class="column">
+      <h2>Column 1</h2>
+      <p>This column uses float and adapts to full width on smaller screens.</p>
+    </div>
+    <div class="column">
+      <h2>Column 2</h2>
+      <p>This column uses float and adapts to full width on smaller screens.</p>
+    </div>
+  </div>
+</body>
+</html>
