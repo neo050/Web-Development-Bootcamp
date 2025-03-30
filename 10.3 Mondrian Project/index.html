@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    /* 
+    <div class="a9 item"></div>
+    */
+    .grid
+    {
+      display: grid;
+      grid-template-rows:414px 295px 20px ;
+      grid-template-columns: 320px 360px 50px;
+      gap: 9px;
+      height: 747px;
+      width: 748px;
+      background-color:#000;   
+         
+    }
+    .item{
+      background-color: #F0F1EC;
+
+    }
+    .a1{
+      background-color: #E72F24;
+    }
+    
+    .a6 {
+       grid-area: 2 / 3 / -1 / -1;
+    }
+    .a2
+    {
+      grid-area: 1 / 2 / 2 / -1 ;
+
+    }
+ 
+    .a6b
+    {
+      height: 130px;
+      width: 50px;
+      max-height: 130px;
+      background-color: #004592;
+      border-bottom-width:18px;
+      border-bottom-color: #000;
+      border-bottom-style:solid;
+    }
+    
+    
+
+       
+    .a8
+   {
+      display: flex;
+    }
+     
+    .a8b{
+      height: 20px;
+      width: 198px;
+      background-color: #F9D01E;
+      border-right-width:9px;
+      border-right-color: #000;
+      border-right-style:solid;
+   
+    }
+   
+    .a8c{
+      height: 20px;
+      width: 153px;
+      background-color: #232629;
+    }
+     body{
+      display: flex;
+      align-items:center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+      
+
+     }
+    
+  </style>
+</head>
+
+<body>
+  <div class="grid">
+    <div class="a1 item"></div>
+    <div class="a2 item"></div>
+    <div class="a3 item"></div>
+    <div class="a4 item"></div>
+    <div class="a5 item"></div>
+    <div class="a6 item">
+      <div class="a6b item"></div>
+    </div>
+    <div class="a8 item">
+      <div class="a8b"></div>
+      <div class="a8c"></div>
+    </div>
+  </div>
+</body>
+
+</html>
