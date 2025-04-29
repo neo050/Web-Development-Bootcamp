@@ -2,7 +2,9 @@ import express from "express";
 import bodyParser from "body-parser";
 
 const app = express();
-const port = 3001;
+// you had 3009
+const port = process.env.PORT || 3009;
+
 const masterKey = "4VGP2DN-6EWM4SJ-N6FGRHV-Z3PR3TT";
 
 
